@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+        <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
+
+        <title>italk &mdash; Your personalized chat app</title>
+
+        <script src="https://unpkg.com/feather-icons"></script>
+    </head>
+    <body>
+        <div class="container">
+
+            <header class="header">
+                <div class="logo-box">
+                    <img src="img/logo.png" alt="italk logo" class="logo-box__logo">
+                    <span class="logo-box__logo-name">italk</span>
+                </div>
+
+                <ul class="chat-nav">
+                    <li class="chat-nav__icon-box">
+                        <i class="icon" data-feather="users"></i>
+                        <span class="chat-nav__text">Groups</span>
+                    </li>
+                    <li class="chat-nav__icon-box active">
+                        <i class="icon" data-feather="message-square"></i>
+                        <span class="chat-nav__text">Messages</span>
+                    </li>
+                    <li class="chat-nav__icon-box">
+                        <i class="icon" data-feather="video"></i>
+                        <span class="chat-nav__text">Video Calls</span>
+                    </li>
+                    <li class="effect"></li>
+
+                </ul>
+                <nav class="user-nav">
+                    <div class="user-nav__icon-box">
+                        <i class="icon" data-feather="help-circle"></i>
+                    </div>
+                    <div class="user-nav__icon-box">
+                        <i class="icon__not" data-feather="bell"></i>
+                    </div>
+                    <div class="user-nav__user">
+                        <img src="img/user-4.jpg" alt="User photo" class="user-nav__user-photo">
+                        <span class="user-nav__user-name">Robin Wang</span>
+                        <i class="icon__chev" data-feather="chevron-down"></i>
+                    </div>
+                </nav>
+            </header>
+
+
+            <div class="content">
+                <nav class="sidebar">
+                    <div class="profile">
+                        <img src="img/user-4.jpg" alt="Profile pic" class="profile__img">
+                        <img src="img/logo.png" alt="logo small" class="profile__logo-sm">
+                        <p class="profile__name">Robin Wang</p>
+                        <p class="profile__bio">Life starts at the end of your comfort zone</p>
+                    </div>
+                    <ul class="side-nav">
+                        <li class="side-nav__item active">
+                            <a href="#" class="side-nav__head">
+                                <i class="icon side-nav__icon" data-feather="message-square"></i>
+                                <span class="side-nav__text">Messages</span>
+                            </a>
+                            <ul class="sub-nav">
+                                <li class="sub-nav__item active">
+                                    <a href="#" class="sub-nav__text">Chats</a>
+                                </li>
+                                <li class="sub-nav__item">
+                                    <a href="#" class="sub-nav__text">Send Message</a>
+                                </li>
+
+                            </ul>
+                        </li>
+                        <li class="side-nav__item">
+                            <a href="#" class="side-nav__head">
+                                <i class="icon side-nav__icon" data-feather="users"></i>
+                                <span class="side-nav__text">Groups</span>
+                            </a>
+                            <ul class="sub-nav">
+                                <li class="sub-nav__item">
+                                    <a href="#" class="sub-nav__text">History</a>
+                                </li>
+                                <li class="sub-nav__item">
+                                    <a href="#" class="sub-nav__text">Create Groups</a>
+                                </li>
+
+                            </ul>
+                        </li>
+                        <li class="side-nav__item">
+                            <a href="#" class="side-nav__head">
+                                <i class="icon side-nav__icon" data-feather="video"></i>
+                                <span class="side-nav__text">Video Calls</span>
+                            </a>
+                            <ul class="sub-nav">
+                                <li class="sub-nav__item">
+                                    <a href="#" class="sub-nav__text">History</a>
+                                </li>
+                                <li class="sub-nav__item">
+                                    <a href="#" class="sub-nav__text">Calls</a>
+                                </li>
+
+                            </ul>
+                        </li>
+                    </ul>
+
+                </nav>
+                <main class="chat-window">
+                    <div class="chat-window__head">
+                        <div class="tab-open">
+                            <i class="icon tab-open__icon" data-feather="message-square"></i>
+                            <span class="tab-open__text">Messages</span>
+                        </div>
+                        <div class="expand">
+                            <i class="icon icon__expand" data-feather="maximize-2"></i>
+
+                        </div>
+                    </div>
+
+                    <div class="chats">
+                        <div class="chats-list">
+                            <div class="chats-head">
+                                <p class="chats-head__text">Chats</p>
+                                <span class="chats-head__chatnum">29/30</span>
+                            </div>
+                            
+                            <div class="chats-list__items active">
+                                <div class="user-block">
+                                    <img src="img/user-6.jpg" alt="Profile pic" class="user-block__logo">
+                                    <div class="user-block__details">
+                                        <p class="user-block__usrname">
+                                            Olivia Sol
+                                        </p>
+                                        <p class="user-block__usermsg">
+                                            Hey robin, this seems like a great start
+                                            <i class="em em-grin"></i>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="chat-insights">
+                                    <div class="chat-insights__timestamp">
+                                        19 Jan, 2018 | 03:49 pm
+                                    </div>
+                                    <div class="chat-insights__report">
+                                        <div class="replies">
+                                            <i class="chat-insights__icon-replies" data-feather="eye"></i>
+                                            <p class="replies__text">20 Replies</p>
+                                        </div>
+                                        <div class="reports">
+                                            <i class="chat-insights__icon-reports" data-feather="bar-chart-2"></i>
+                                            <p class="reports__text">290/300</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="chats-list__items">
+                                <div class="user-block">
+                                    <img src="img/user-3.jpg" alt="Profile pic" class="user-block__logo">
+                                    <div class="user-block__details">
+                                        <p class="user-block__usrname">
+                                            Alexander
+                                        </p>
+                                        <p class="user-block__usermsg">
+                                            I'll be sending the mail soon.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="chat-insights">
+                                    <div class="chat-insights__timestamp">
+                                        19 Jan, 2018 | 03:40 pm
+                                    </div>
+                                    <div class="chat-insights__report">
+                                        <div class="replies">
+                                            <i class="chat-insights__icon-replies" data-feather="eye"></i>
+                                            <p class="replies__text">14 Replies</p>
+                                        </div>
+                                        <div class="reports">
+                                            <i class="chat-insights__icon-reports" data-feather="bar-chart-2"></i>
+                                            <p class="reports__text">120/149</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="chats-list__items">
+                                <div class="user-block">
+                                    <img src="img/user-2.jpg" alt="Profile pic" class="user-block__logo">
+                                    <div class="user-block__details">
+                                        <p class="user-block__usrname">
+                                            Sophia Richi
+                                        </p>
+                                        <p class="user-block__usermsg">
+                                            Thanks, how about an
+                                            <i class="em em-icecream"></i>
+                                            ?
+                                        </p>
+
+                                    </div>
+                                </div>
+                                <div class="chat-insights">
+                                    <div class="chat-insights__timestamp">
+                                        19 Jan, 2018 | 03:39 pm
+                                    </div>
+                                    <div class="chat-insights__report">
+                                        <div class="replies">
+                                            <i class="chat-insights__icon-replies" data-feather="eye"></i>
+                                            <p class="replies__text">11 Replies</p>
+                                        </div>
+                                        <div class="reports">
+                                            <i class="chat-insights__icon-reports" data-feather="bar-chart-2"></i>
+                                            <p class="reports__text">100/119</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="chats-list__items">
+                                <div class="user-block">
+                                    <img src="img/user-5.jpg" alt="Profile pic" class="user-block__logo">
+                                    <div class="user-block__details">
+                                        <p class="user-block__usrname">
+                                            Ethan Malson
+                                        </p>
+                                        <p class="user-block__usermsg">
+                                            Wohoo
+                                            <i class="em em-headphones"></i>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="chat-insights">
+                                    <div class="chat-insights__timestamp">
+                                        19 Jan, 2018 | 10:30 am
+                                    </div>
+                                    <div class="chat-insights__report">
+                                        <div class="replies">
+                                            <i class="chat-insights__icon-replies" data-feather="eye"></i>
+                                            <p class="replies__text">05 Replies</p>
+                                        </div>
+                                        <div class="reports">
+                                            <i class="chat-insights__icon-reports" data-feather="bar-chart-2"></i>
+                                            <p class="reports__text">123/180</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="chat-details">
+                            <ul class="chat-det-head">
+                                <li class="chat-det-list chat-details__replies active" style="border-right:none;">
+                                    <i class="chat-details__icon-replies" data-feather="eye"></i>
+                                    <p class="chat-details__text">Replies</p>
+                                </li>
+                                <li class="chat-det-list chat-details__reports">
+                                    <i class="chat-details__icon-reports" data-feather="bar-chart-2"></i>
+                                    <p class="chat-details__text">Reports</p>
+                                </li>
+                                <li class="effect"></li>
+
+                            </ul>
+
+                            <div class="chat-body">
+                                <div class="latest-date">Today</div>
+                                <div class="msg-box msg-box__sender">
+                                    <div class="msg-body tri-right btm-right">
+
+                                        <div class="msg-body__message">
+                                            Hey Olivia
+                                            <i class="em em-smiley"></i>
+                                            , Did you get a chance to see the venue?
+                                        </div>
+                                        <img src="img/user-4.jpg" alt="User photo" class="user-nav__user-photo">
+                                    </div>
+                                    <div class="msg-box__timestamp-sender">
+                                        2 Hrs ago
+                                    </div>
+                                </div>
+                                <div class="msg-box msg-box__receiver">
+                                    <div class="msg-body tri-right btm-left">
+                                        <img src="img/user-6.jpg" alt="User photo" class="user-nav__user-photo">
+                                        <div class="msg-body-block">
+                                            <div class="msg-body__message">
+                                                Hi robin, this seems like a great start
+                                                <i class="em em-smile"></i>
+                                            </div>
+                                            <div class="msg-body__gallery">
+                                                <div class="msg-body__gallery-main-img">
+                                                    <img src="img/hotel-2.jpg" alt="Gallery image" class="gal-img">
+                                                </div>
+                                                <div class="msg-body__gallery-other-imgs">
+                                                    <img src="img/hotel-1.jpg" alt="Gallery image" class="gal-o-img">
+                                                    <img src="img/hotel-3.jpg" alt="Gallery image" class="gal-o-img">
+                                                    <img src="img/hotel-4.jpeg" alt="Gallery image" class="gal-o-img">
+                                                </div>
+                                            </div>
+                                            <div class="msg-body__reaction">
+                                                <i class="em em-heart_eyes"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="msg-box__timestamp-receiver">
+                                        2 Hrs ago
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="chat-user-input">
+                                <div class="chat-input">
+                                    <div class="btn-block" id="tooltip-btn">
+                                        <a class="btn-round toggle js-toggle"><span></span></a>
+
+                                    </div>
+                                    <div class="input-block">
+                                        <input type="text" class="text-input" placeholder="Enter your message here . . .">
+                                        <button class="btn btn-primary">
+                                            <i class="chat-input__icon-send" data-feather="send"></i>
+                                            <span class="chat-input__text">Send</span>
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div class="tooltip-input" id="tooltip-block">
+                                    <div class="tooltip-input__block tooltip-input__audio">
+                                        <i class="tooltip-input__icon" data-feather="volume-2"></i>
+                                        <span class="tooltip-input__text">
+                                        Audio
+                                    </span>
+                                    </div>
+                                    <div class="tooltip-input__block tooltip-input__video">
+                                        <i class="tooltip-input__icon" data-feather="video"></i>
+                                        <span class="tooltip-input__text">
+                                        Video
+                                    </span>
+                                    </div>
+                                    <div class="tooltip-input__block tooltip-input__text">
+                                        <i class="tooltip-input__icon" data-feather="type"></i>
+                                        <span class="tooltip-input__text">
+                                        Text
+                                    </span>
+                                    </div>
+                                    <div class="tooltip-input__block tooltip-input__image">
+                                        <i class="tooltip-input__icon" data-feather="image"></i>
+                                        <span class="tooltip-input__text">
+                                        Image
+                                    </span>
+                                    </div>
+                                    <div class="tooltip-input__block tooltip-input__tts">
+                                        <i class="tooltip-input__icon" data-feather="mic"></i>
+                                        <span class="tooltip-input__text">
+                                        TTS
+                                    </span>
+                                    </div>
+                                    <div class="tooltip-input__block tooltip-input__audiotext">
+                                        <i class="tooltip-input__icon" data-feather="film"></i>
+                                        <span class="tooltip-input__text">
+                                        Audio &amp; Text
+                                    </span>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </main>
+
+            </div>
+
+            <footer class="footer">
+                <div class="ft-logo-box">
+                    <img src="img/logo-bw.png" alt="italk logo" class="ft-logo-box__logo">
+                    <span class="ft-logo-box__logo-name">italk</span>
+                </div>
+            </footer>
+
+        </div>
+
+
+        <script>
+            feather.replace()
+        </script>
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+        <script src="index.js"></script>
+    </body>
+</html>

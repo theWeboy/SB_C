@@ -1,0 +1,72 @@
+.user-block{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 1rem;
+
+  padding-bottom: 1.5rem;
+
+  &__logo{
+    border-radius: 50%;
+    display: block;
+    width: 7rem;
+  }
+
+  &__details{
+    color: var(--color-grey-dark-1);
+    padding-left: 1.5rem;
+  }
+
+  &__usrname{
+    font-size: 1.7rem;
+    font-weight: 700;
+  }
+
+  &__usermsg{
+    font-size: 1.1rem;
+    font-weight: 500;
+  }
+}
+
+.chat-insights{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__report{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__icon-replies{
+    height: 1.5rem;
+    width: 1.5rem;
+    color: #59e55e;
+    margin-right: .4rem;
+  }
+
+  &__icon-reports{
+    height: 1.5rem;
+    width: 1.5rem;
+    color: #9749ff;
+    margin-right: .4rem;
+  }
+}
+
+.reports,.replies{
+  display: flex;
+  align-items: center;
+
+  &__text {
+    font-size: 1.1rem;
+    font-weight: 500;
+  }
+
+}
+
+.replies{
+  padding-right: 1.1rem;
+  margin-right: .5rem;
+
+  border-right: var(--color-grey-light-4) 1px solid;
+}

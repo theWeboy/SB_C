@@ -1,0 +1,95 @@
+
+/// SIDE NAV
+
+.profile{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 1.7rem;
+
+  &__img{
+    z-index: 1;
+    border-radius: 50%;
+    height: 12rem;
+    width: 12.5rem;
+    display: block;
+    margin-left: 2.5rem;
+  }
+
+  &__logo-sm{
+    height: 3rem;
+    position: absolute;
+    top: 9rem;
+    left: 11rem;
+    z-index: 2;
+  }
+
+  &__name{
+    font-size: 2.7rem;
+    font-weight: 900;
+    text-align: center;
+    color: var(--color-grey-dark-1);
+  }
+
+  &__bio{
+    font-size: 1.25rem;
+    text-align: center;
+    color: var(--color-grey-dark-3);
+
+  }
+}
+
+.side-nav{
+
+  &__head:link,
+  &__head:visited{
+    background-color: #fff;
+    display: flex;
+    border-radius: .5rem;
+    font-size: 1.8rem;
+    padding: .4rem .5rem;
+    align-items: center;
+    text-decoration: none;
+    color: var(--color-grey-dark-1);
+    margin-bottom: .5rem;
+  }
+
+
+
+  &__icon{
+    margin-left: 1.2rem;
+  }
+
+  &__item{
+    margin-bottom: 1.4rem;
+  }
+
+  &__text{
+    font-weight: 600;
+    font-size: 1.5rem;
+    margin-left: 1.2rem;
+  }
+}
+
+.sub-nav{
+  margin-left: 5rem;
+  padding: .2rem 0;
+
+  color: var(--color-grey-dark-2);
+
+  &__item{
+    margin-bottom: .3rem;
+  }
+
+  &__text{
+    text-decoration: none;
+    color: inherit;
+    font-size: 1.2rem;
+  }
+
+  &__text:hover{
+    color: var(--color-grey-dark-1);
+    transition: all .4s;
+  }
+}

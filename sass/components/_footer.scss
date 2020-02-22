@@ -1,0 +1,15 @@
+// FOOTER
+
+.ft-logo-box{
+  margin-left: 3rem;
+
+  &__logo{
+    height: 3.25rem;
+  }
+
+  &__logo-name{
+    font-weight: bolder;
+    font-size: 2.5rem;
+    color: var(--color-grey-dark-3);
+  }
+}

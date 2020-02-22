@@ -1,0 +1,131 @@
+.chat-details{
+  border-top-right-radius: inherit;
+  border-bottom-right-radius: inherit;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+
+  &__replies,&__reports{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0 1.5rem;
+    color: var(--color-grey-dark-2);
+    align-self: stretch;
+    padding: 1.3rem;
+    cursor: pointer;
+  }
+
+  &__replies:hover,&__reports:hover{
+    color: var(--color-grey-dark-1);
+    transition: all .4s;
+  }
+
+  &__icon-replies,&__icon-reports{
+    height: 2.25rem;
+    width: 2.25rem;
+  }
+
+  &__text{
+    margin-left: 1rem;
+    font-size: 1.6rem;
+    font-weight: 700;
+  }
+}
+
+.chat-det-head{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-bottom: var(--color-grey-light-2) 1px solid;
+}
+
+// CHAT WINDOW
+
+.chat-window{
+  margin: 2.5rem;
+
+  &__head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.tab-open{
+  display: flex;
+  align-items: center;
+  padding-left: 2.2rem;
+
+  &__icon{
+    fill: var(--color-primary);
+    height: 3.25rem;
+    width: 3.25rem;
+    margin-right: 1.5rem;
+    color: var(--color-primary);
+  }
+
+  &__text{
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: var(--color-grey-dark-1);
+  }
+}
+
+.chats{
+  min-height: 50rem;
+  background-color: #fff;
+  border-radius: 1.3rem .5rem .5rem 1.3rem;
+  margin-top: 2rem;
+  display: flex;
+  box-shadow: 0 3.5rem 4rem rgba(0,0,0,0.1);
+}
+
+.chats-list{
+  flex: 0 0 35%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  min-height: 40rem;
+  align-self: stretch;
+  border-right: var(--color-grey-light-3) 1px solid;
+
+  border-top-left-radius: inherit;
+  border-bottom-left-radius: inherit;
+
+  background-color: var(--color-off-white);
+}
+
+.chats-head{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--color-grey-dark-1);
+  padding: 1.2rem 1.6rem;
+  border-bottom: var(--color-grey-light-3) 1px solid;
+
+  &__text{
+    font-size: 1.7rem;
+    font-weight: 700;
+  }
+
+  &__chatnum{
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+}
+
+.chats-list__items{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1.2rem;
+  box-shadow: 0 22px 1.5px -22px var(--color-grey-dark-3);
+  cursor: pointer;
+  &:hover{
+    background-color: var(--color-grey-light-3);
+    transition: all .4s;
+  }
+}
+
+
